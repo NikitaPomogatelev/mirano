@@ -11,11 +11,11 @@ export const Hero = () => (
       <figure className="hero__group-image">
         <picture className="hero__image hero__image_left">
           <source
-            srcSet="/img/hero-left@1x.avif 1x, /img/hero-left@2x.avif 2x"
+            srcSet="img/hero-left@1x.avif 1x, img/hero-left@2x.avif 2x"
             type="image/avif"
           />
           <source
-            srcSet="/img/hero-left@1x.webp 1x, /img/hero-left@2x.webp 2x"
+            srcSet="img/hero-left@1x.webp 1x, img/hero-left@2x.webp 2x"
             type="image/webp"
           />
           <img
@@ -47,11 +47,11 @@ export const Hero = () => (
 
         <picture className="hero__image hero__image_right">
           <source
-            srcSet="img/hero-right@1x.avif 1x, /img/hero-right@2x.avif 2x"
+            srcSet="img/hero-right@1x.avif 1x, img/hero-right@2x.avif 2x"
             type="image/avif"
           />
           <source
-            srcSet="img/hero-right@1x.webp 1x, /img/hero-right@2x.webp 2x"
+            srcSet="img/hero-right@1x.webp 1x, img/hero-right@2x.webp 2x"
             type="image/webp"
           />
           <img
