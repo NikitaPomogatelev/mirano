@@ -29,7 +29,7 @@ export const Header = () => (
 
       <img
         className="header__logo"
-        src="/img/logo.svg"
+        src="img/logo.svg"
         alt="Логотип Mirano Flower Boutique"
       />
 

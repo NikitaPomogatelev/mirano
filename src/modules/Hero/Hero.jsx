@@ -19,8 +19,8 @@ export const Hero = () => (
             type="image/webp"
           />
           <img
-            src="/img/hero-left@1x.jpg"
-            srcSet="/img/hero-left@2x.jpg 2x"
+            src="img/hero-left@1x.jpg"
+            srcSet="img/hero-left@2x.jpg 2x"
             alt="Букет цветов в банке. В бкете ярко-ораньжевые розы, ораньжевые тюльпаны и львиный зев. Дополнительно в композию включены белые цветы и зеленые элементы, придающие букету объем и разнообразие"
           />
         </picture>
@@ -47,16 +47,16 @@ export const Hero = () => (
 
         <picture className="hero__image hero__image_right">
           <source
-            srcSet="/img/hero-right@1x.avif 1x, /img/hero-right@2x.avif 2x"
+            srcSet="img/hero-right@1x.avif 1x, /img/hero-right@2x.avif 2x"
             type="image/avif"
           />
           <source
-            srcSet="/img/hero-right@1x.webp 1x, /img/hero-right@2x.webp 2x"
+            srcSet="img/hero-right@1x.webp 1x, /img/hero-right@2x.webp 2x"
             type="image/webp"
           />
           <img
-            src="/img/hero-right@1x.jpg"
-            srcSet="/img/hero-right@2x.jpg 2x"
+            src="img/hero-right@1x.jpg"
+            srcSet="img/hero-right@2x.jpg 2x"
             alt="Букет цветов в банке. В бкете ярко-ораньжевые розы, ораньжевые тюльпаны и львиный зев. Дополнительно в композию включены белые цветы и зеленые элементы, придающие букету объем и разнообразие"
           />
         </picture>
