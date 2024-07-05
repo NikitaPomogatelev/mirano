@@ -1,10 +1,21 @@
+import { useDispatch } from "react-redux";
 import { OrderStatus } from "./OrderStatus";
 import "./order.scss";
+import { toggleModal } from "../../redux/modalSlice";
 
 export const Order = () => {
+  const dispatch = useDispatch();
+  const closeModal = (e) => {
+    console.log("e", e.composedPath);
+    const className = e.target?.className;
+    if ((className && className === "order") || className === "order__close") {
+      dispatch(toggleModal());
+    }
+  };
+
   return (
     <>
-      <div className="order">
+      <div className="order" onClick={(event) => closeModal(event)}>
         <div className="order__wrapper">
           <h2 className="order__title">Оформить заказ</h2>
           <form className="order__form" id="order">
@@ -102,10 +113,10 @@ export const Order = () => {
               Заказать
             </button>
           </div>
-        </div>
         <button className="order__close" type="button">
           ×
         </button>
+        </div>
       </div>
 
       <OrderStatus />

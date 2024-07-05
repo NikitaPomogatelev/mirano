@@ -1,22 +1,24 @@
-import './footer.scss'
+import "./footer.scss";
+import style from "./Footer.module.scss";
+import classNames from "classnames";
 
 export const Footer = () => (
-  <footer className="footer">
-    <div className="container footer__container">
+  <footer className={style.footer}>
+    <div className={classNames("container", style.container)}>
       <img
-        className="footer__logo"
+        className={style.logo}
         src="img/logo.svg"
         alt="Логотип Mirano Flower Boutique"
       />
 
-      <address className="footer__address">
-        <a className="footer__mail" href="mailto:Mirano@gmail.com">
+      <address className={style.address}>
+        <a className={style.mail} href="mailto:Mirano@gmail.com">
           Mirano@gmail.com
         </a>
 
-        <ul className="footer__social-list">
-          <li className="footer__social-item">
-            <a className="footer__link" href="#" aria-label="канал в телеграм">
+        <ul className={style.socialList}>
+          <li className={style.socialItem}>
+            <a className={style.link} href="#" aria-label="канал в телеграм">
               <svg
                 width="28"
                 height="28"
@@ -32,8 +34,8 @@ export const Footer = () => (
             </a>
           </li>
 
-          <li className="footer__social-item">
-            <a className="footer__link" href="#" aria-label="канал в youtube">
+          <li className={style.socialItem}>
+            <a className={style.link} href="#" aria-label="канал в youtube">
               <svg
                 width="28"
                 height="28"
@@ -49,8 +51,8 @@ export const Footer = () => (
             </a>
           </li>
 
-          <li className="footer__social-item">
-            <a className="footer__link" href="#" aria-label="группа в вк">
+          <li className={style.socialItem}>
+            <a className={style.link} href="#" aria-label="группа в вк">
               <svg
                 width="28"
                 height="28"
@@ -68,28 +70,28 @@ export const Footer = () => (
         </ul>
       </address>
 
-      <div className="footer__developers">
-        <p className="footer__developers-title">
+      <div className={style.developers}>
+        <p className={style.developersTitle} >
           Проект сделан в учебных целях
         </p>
 
-        <ul className="footer__developers-list">
-          <li className="footer__developers-item">
+        <ul className={style.developersList} >
+          <li className={style.developersItem}>
             Designer:{" "}
-            <a className="footer__link" href="Anastasia_Ilina">
+            <a className={style.link} href="Anastasia_Ilina">
               Anastasia Ilina
             </a>
           </li>
-          <li className="footer__developers-item">
+          <li className={style.developersItem}>
             Developer:{" "}
-            <a className="footer__link" href="maksim_leskin">
+            <a className={style.link} href="maksim_leskin">
               Makism Leskin
             </a>
           </li>
         </ul>
       </div>
 
-      <p className="footer__copyright">©MIRANO, 2024</p>
+      <p className={style.copyright}>©MIRANO, 2024</p>
     </div>
   </footer>
 );
