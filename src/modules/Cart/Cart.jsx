@@ -1,14 +1,15 @@
 import "./cart.scss";
-import { goodsArray } from "../../goodsArray";
+// import { goodsArray } from "../../goodsArray";
 import { CartItem } from "./CartItem";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleCart } from "../../redux/cartSlice";
 import { toggleModal } from "../../redux/modalSlice";
 
 export const Cart = () => {
+  const dispatch = useDispatch();
   const isOpen = useSelector((state) => state.cart.isOpen);
   // const isModalOpen = useSelector((state) => state.modal.isOpen);
-  const dispatch = useDispatch();
+  const items = useSelector((state) => state.cart.items);
 
   const handlerCartToggle = () => {
     dispatch(toggleCart());
@@ -55,11 +56,9 @@ export const Cart = () => {
 
         <p className="cart__date-delivery">сегодня в 14:00</p>
 
-        {goodsArray && goodsArray.length && (
+        {items && items.length && (
           <ul className="cart__list">
-            {goodsArray.map(
-              (item) => item && <CartItem key={item.id} {...item} />
-            )}
+            {items.map((item) => item && <CartItem key={item.id} {...item} />)}
           </ul>
         )}
 
